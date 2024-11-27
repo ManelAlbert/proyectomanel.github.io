@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica el tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Configura la vista para ser adaptable a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <!-- Vincula el archivo CSS externo para estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Página de Inicio -->
+    <header class="header">
+        <div class="banner">
+            <!-- Nombre completo de la persona -->
+            <h1>Manel Albert Gomez Ros</h1>
+            <!-- Logo personal con imagen -->
+            <img src="Logo.webp" alt="Logo personal" class="logo">
+        </div>
+        <!-- Navegación principal del sitio -->
+        <nav class="nav">
+            <!-- Enlaces internos hacia secciones específicas de la página -->
+            <a href="#about">Sobre Mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <!-- Aviso de cookies con botón para ocultarlo -->
+        <div class="cookie-notice" id="cookieNotice">
+            <p>Este sitio web utiliza cookies para mejorar la experiencia. 
+            <button onclick="hideCookieNotice()">Aceptar</button></p>
+        </div>
+    </header>
+
+    <!-- Sección "Sobre Mí" -->
+    <section id="about" class="about">
+        <div class="card">
+            <h2>Sobre Mí</h2>
+            <!-- Breve descripción personal -->
+            <p>Soy Manel, tengo 18 años y me apasiona la informática. Actualmente estoy cursando un grado superior en Administración de Sistemas Informáticos en Red (ASIR) después de haber completado el grado medio en Sistemas Microinformáticos y Redes (SMR). Ya tengo un año de experiencia laboral y he trabajado en FLOPS Ingeniers, además de estar trabajando en Voicemod Inc., una empresa especializada en modulación de voz, donde sigo desarrollándome profesionalmente. Mis intereses abarcan los videojuegos, el manga y la música, además de, por supuesto, la informática. Mi objetivo actual es continuar trabajando en Voicemod y finalizar con éxito el grado superior.</p>
+            <!-- Íconos de redes sociales con enlaces externos -->
+            <div class="social-icons">
+                <a href="https://www.youtube.com/" class="icon"><img src="Logos/Youtube.png" alt="YouTube" width="24" height="24"></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="icon"><img src="Logos/Linkedin.webp" alt="LinkedIn" width="24" height="24"></a>
+                <a href="https://www.instagram.com/" class="icon"><img src="Logos/Instagram.webp" alt="Instagram" width="24" height="24"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <!-- Grid para mostrar tarjetas de proyectos -->
+        <div class="project-grid">
+            <!-- Cada tarjeta representa un proyecto con imagen y descripción -->
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 1.png" alt="Proyecto 1">
+                <h3>Windows 11</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion de windows 11.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 2.png" alt="Proyecto 2">
+                <h3>Windows Server 2025</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion de windows servers 2025.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 3.png" alt="Proyecto 3">
+                <h3>Guest Additions</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion de las guest additions tanto en windows 11 como windows server 2025.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 4.png" alt="Proyecto 3">
+                <h3>LAN y WAN</h3>
+                <p>Un proyecto donde tuve que hacer una guia de configuracion de una red LAN y WAN.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 5.png" alt="Proyecto 3">
+                <h3>Dominio AD DS</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion de un dominio Active Directory y como unir un equipo windows 11 al mismo.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 6.png" alt="Proyecto 3">
+                <h3>Active Directory</h3>
+                <p>Un proyecto donde tuve que hacer una guia de administracion de usuarios de un dominio active directory.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 7.png" alt="Proyecto 3">
+                <h3>Recursos Compartidos</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion del servicio de recursos compartidos en windows server.</p>
+            </div>
+            <div class="project-card">
+                <img src="Carpeta Proyectos/Proyecto 8.png" alt="Proyecto 3">
+                <h3>SNAT</h3>
+                <p>Un proyecto donde tuve que hacer una guia de instalacion de SLAT al igual que configurar el enrutamiento en windows server 2025.</p>
+            </div>
+            <!-- Añade más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades y Conocimientos -->
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <!-- Cada habilidad tiene un nivel de competencia y una barra de progreso -->
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Tengo un nivel intermedio en HTML, lo que significa que manejo bien las estructuras básicas y puedo crear enlaces, insertar imágenes y aplicar estilos sencillos. Aún me falta afinar y profundizar en técnicas más avanzadas para mejorar mi dominio en esta área.</p>
+            <div class="progress-bar"><span style="width: 55%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Tengo un nivel intermedio en CSS, lo que me permite manejar conceptos básicos de diseño, como colores, fuentes y disposición de elementos. Aún estoy trabajando en mejorar mis habilidades en técnicas más avanzadas para lograr un control más preciso sobre el estilo y la presentación de las páginas.</p>
+            <div class="progress-bar"><span style="width: 50%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>Base de datos</h3>
+            <p>Tengo un buen nivel de conocimientos en bases de datos entidad-relación, con una comprensión sólida de cómo estructurar y modelar datos mediante entidades, relaciones y atributos. Puedo crear esquemas eficaces y entender cómo organizar la información para facilitar consultas y optimizar el rendimiento, aunque aún puedo mejorar en algunos aspectos avanzados.</p>
+            <div class="progress-bar"><span style="width: 70%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>Scripting Linux</h3>
+            <p>Tengo un nivel avanzado en scripting de Linux, lo que me permite escribir y optimizar scripts para automatizar tareas, gestionar procesos y realizar configuraciones en el sistema de manera eficiente. Domino bien las herramientas y comandos esenciales, aunque siempre estoy buscando formas de mejorar y hacer mis scripts más robustos y eficientes.</p>
+            <div class="progress-bar"><span style="width: 85%"></span></div>
+        </div>
+        <!-- Añade más habilidades según sea necesario -->
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="contact">
+        <h2>¿Quieres contratarme? ¡Hablemos!</h2>
+        <!-- Formulario de contacto con campos para nombre, correo y mensaje -->
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <!-- Derechos de autor -->
+        <p>© 2024 Manel Albert Gomez Ros</p>
+    </footer>
+    
+    <!-- Script para ocultar el aviso de cookies -->
+    <script>
+        function hideCookieNotice() {
+            // Cambia el estilo de la notificación de cookies para ocultarla
+            document.getElementById("cookieNotice").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
